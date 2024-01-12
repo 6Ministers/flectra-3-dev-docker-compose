@@ -29,9 +29,8 @@ services:
       # - ./etc/localtime:/etc/localtime:ro
       - ./etc/config:/var/lib/flectra:rw
       - ./etc/addons:/mnt/extra-addons:ro
-      - ./etc/data:/var/lib/flectra:rw
       - ./etc/logs:/var/log/flectra:rw
-      - ./etc/geoip-db:/usr/share/GeoIP:ro
+      # - ./etc/geoip-db:/usr/share/GeoIP:ro
       # - ./entrypoint.sh:/entrypoint.sh   # if you want to install additional Python packages, uncomment this line!
     depends_on:
       - db
