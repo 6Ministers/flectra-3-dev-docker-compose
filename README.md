@@ -114,6 +114,12 @@ docker-compose restart
 docker-compose down
 ```
 
+**Restart**:
+
+``` bash
+sudo docker-compose down && sudo docker-compose up -d
+```
+
 ## Live chat
 
 
