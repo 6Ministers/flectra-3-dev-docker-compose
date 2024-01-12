@@ -132,3 +132,4 @@ sudo docker-compose down && sudo docker-compose up -d
 * flectrahq/flectra:3.0
 * postgres:16
 
+![Screenshot_95](https://github.com/6Ministers/flectra-3-dev-docker-compose/assets/11208423/046ac5e0-15b5-43fa-b273-0f695fb15ab3)
