@@ -5,7 +5,7 @@ PORT=$2
 CHAT=$3
 
 # clone Flectra directory
-git clone --depth=1 https://github.com/6Ministers/flectra-3-dev-docker-compose$DESTINATION
+git clone --depth=1 https://github.com/6Ministers/flectra-3-dev-docker-compose $DESTINATION
 rm -rf $DESTINATION/.git
 
 # set permission
