@@ -1,8 +1,7 @@
 
 ![Screenshot_94](https://github.com/6Ministers/flectra-3-dev-docker-compose/assets/11208423/d29a6c37-4ebc-4142-b3dc-f4dd6a43ddde)
 
-**# Installing FlectraHQ 3.0 ALFA with one command (Supports multiple FlectraHQ instances on one server). For development.
-ith one command (Supports multiple FlectraHQ instances on one server). For development.**
+# Installing FlectraHQ 3.0 ALFA with one command (Supports multiple FlectraHQ instances on one server). For development.
 
 ## Quick Installation
 
