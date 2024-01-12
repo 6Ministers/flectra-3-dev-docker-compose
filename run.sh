@@ -21,4 +21,4 @@ sed -i 's/20020/'$CHAT'/g' $DESTINATION/docker-compose.yml
 # run Flectra
 docker-compose -f $DESTINATION/docker-compose.yml up -d
 
-echo 'Started Flectra @ http://ip:'$PORT' | Master Password: master.password | Live chat port: '$CHAT
+echo 'Started Flectra @ http://ip:'$PORT' | Master Password:  | Live chat port: '$CHAT
