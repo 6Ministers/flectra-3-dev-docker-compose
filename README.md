@@ -92,9 +92,8 @@ The **addons/** folder contains custom addons. Just put your custom addons if yo
 
 ## Flectra configuration & log
 
-* To change Flectra configuration, edit file: **etc/flectra.conf**.
-* Log file: **etc/flectra-server.log**
-* Default database password (**admin_passwd**) is ``master.password`, please change it @ [/etc/config/flectra.conf#L60](/etc/config/flectra.conf#L60)
+
+
   
 
 ## Flectra container management
