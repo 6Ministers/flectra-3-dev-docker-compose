@@ -41,6 +41,49 @@ $ sudo apt-get install curl
 $ sudo yum install curl
 ```
 
+# Create a database user for BI access
+
+``` bash
+curl -OL https://raw.githubusercontent.com/6Ministers/flectra-3-dev-docker-compose/main/createdbuser.sh
+```
+
+Set Variables
+
+``` bash
+# Define variables
+USER=read_only
+PASS=password
+DATABASE=test
+```
+
+Make settings in the configuration `postgresql`
+
+`pg_hba.conf`
+``` bash
+# IPv4 remote connection
+# TYPE  DATABASE        USER            ADDRESS                 METHOD
+host    database        flectra         IP/32                   md5
+```
+`postgresql.conf`
+``` bash
+listen_addresses = '*'
+					# comma-separated list of addresses;
+					# defaults to 'localhost'; use '*' for all
+					# (change requires restart)
+port = 5432				# (change requires restart)
+max_connections = 100			# (change requires restart)
+```
+
+Activate the script
+``` bash
+chmod +x createdbuser.sh
+```
+
+``` bash
+sudo ./createdbuser.sh
+```
+
+
 ## Usage
 
 Start the container:
