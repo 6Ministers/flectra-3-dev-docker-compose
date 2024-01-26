@@ -28,6 +28,32 @@ and/or run the following to set up another Flectra instance @ `localhost:11020` 
 curl -s https://raw.githubusercontent.com/6Ministers/flectra-3-dev-docker-compose/master/run.sh | sudo bash -s flectra-two 11020 21020
 ```
 
+
+# monitor Docker logs Dozzle
+
+Dozzle is a small lightweight application with a web based interface to monitor Docker logs. It doesn’t store any log files. It is for live monitoring of your container logs only.
+
+
+Dozzle will be available at http://localhost:8888/.
+
+Login and password:
+
+`Login: admin`
+`Pass: password`
+
+`auth\data\users.yml`
+
+``` bash
+users:
+  # "admin" here is username
+  admin:
+    name: "Admin"
+    # Just sha-256 which can be computed with "echo -n password | shasum -a 256"
+    password: "5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8"
+# Dozzle uses email to generate avatars using Gravatar. It is optional.
+#    email: me@email.net # Dozzle uses email to generate avatars using Gravatar. It is optional.
+```
+
 Some arguments:
 * First argument (**flectra-one**): Flectra deploy folder
 * Second argument (**10020**): Flectra port
@@ -175,3 +201,8 @@ sudo docker-compose down && sudo docker-compose up -d
 * postgres:16
 
 ![Screenshot_95](https://github.com/6Ministers/flectra-3-dev-docker-compose/assets/11208423/046ac5e0-15b5-43fa-b273-0f695fb15ab3)
+
+
+# Documentation
+
+https://dozzle.dev/guide/authentication

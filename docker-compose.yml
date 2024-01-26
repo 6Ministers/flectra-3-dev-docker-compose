@@ -7,6 +7,7 @@ services:
     restart: always             # run as a service    
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock:ro
+      - ./auth/data:/data
     ports:
       - 8888:8080
     environment:
