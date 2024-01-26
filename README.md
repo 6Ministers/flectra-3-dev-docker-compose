@@ -36,24 +36,6 @@ Dozzle is a small lightweight application with a web based interface to monitor 
 
 Dozzle will be available at http://localhost:8888/.
 
-Login and password:
-
-`Login: admin`
-`Pass: password`
-
-`auth\data\users.yml`
-
-``` bash
-users:
-  # "admin" here is username
-  admin:
-    name: "Admin"
-    # Just sha-256 which can be computed with "echo -n password | shasum -a 256"
-    password: "Run the command: "echo -n password | shasum -a 256" and paste the code here
-# Dozzle uses email to generate avatars using Gravatar. It is optional.
-#    email: me@email.net # Dozzle uses email to generate avatars using Gravatar. It is optional.
-```
-
 Some arguments:
 * First argument (**flectra-one**): Flectra deploy folder
 * Second argument (**10020**): Flectra port
