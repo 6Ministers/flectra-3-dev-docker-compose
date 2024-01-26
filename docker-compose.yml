@@ -5,6 +5,10 @@ services:
     container_name: dozzle
     image: amir20/dozzle:latest
     restart: always             # run as a service    
+    environment:
+      - DOZZLE_USERNAME=dozzle
+      - DOZZLE_PASSWORD=dozzle
+      - DOZZLE_NO_ANALYTICS=1
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock:ro
     ports:
