@@ -49,7 +49,7 @@ users:
   admin:
     name: "Admin"
     # Just sha-256 which can be computed with "echo -n password | shasum -a 256"
-    password: "5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8"
+    password: "Run the command: "echo -n password | shasum -a 256" and paste the code here
 # Dozzle uses email to generate avatars using Gravatar. It is optional.
 #    email: me@email.net # Dozzle uses email to generate avatars using Gravatar. It is optional.
 ```
