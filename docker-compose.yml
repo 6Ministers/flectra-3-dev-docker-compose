@@ -1,7 +1,17 @@
 version: '3.8'
 
 services:
+  dozzle:
+    container_name: dozzle
+    image: amir20/dozzle:latest
+    restart: always             # run as a service    
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+    ports:
+      - 8888:8080
+
   db:
+    container_name: postgres
     image: postgres:16
     restart: always             # run as a service    
     environment:
