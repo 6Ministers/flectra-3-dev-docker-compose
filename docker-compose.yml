@@ -2,7 +2,6 @@ version: '3.8'
 
 services:
   dozzle:
-    container_name: dozzle
     image: amir20/dozzle:latest
     restart: always             # run as a service    
     volumes:
@@ -16,7 +15,6 @@ services:
       DOZZLE_NO_ANALYTICS: 1
       
   db:
-    container_name: postgres
     image: postgres:16
     restart: always             # run as a service    
     environment:
