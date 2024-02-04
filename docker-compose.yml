@@ -11,7 +11,7 @@ services:
       - 8888:8080
     environment:
       DOZZLE_ENABLE_ACTIONS: true      
-      DOZZLE_AUTH_PROVIDER: simple
+ #     DOZZLE_AUTH_PROVIDER: simple
       DOZZLE_NO_ANALYTICS: 1
       
   db:
